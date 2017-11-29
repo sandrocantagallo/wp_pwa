@@ -18,8 +18,22 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<link rel="manifest" href="<?php echo get_site_url(); ?>/manifest.json">
+<meta name="theme-color" content="#2196f3">
 <?php wp_head(); ?>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('<?php echo get_site_url(); ?>/sw.js')
+  .then(function(registration) {
+    console.log('Registration successful, scope is:', registration.scope);
+  })
+  .catch(function(error) {
+    console.log('Service worker registration failed, error:', error);
+  });
+}
+</script>
+
 </head>
 
 <body <?php body_class(); ?>>
