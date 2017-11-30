@@ -4,8 +4,8 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
-  "Scope": "https://e06b2a24.ngrok.io/wp_pwa/trunk/",
-  "start_url": "https://e06b2a24.ngrok.io/wp_pwa/trunk/",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

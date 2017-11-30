@@ -20,7 +20,7 @@ let CURRENT_CACHES = {
   offline: 'offline-v' + CACHE_VERSION
 };
 //da modificare una volta in produzione
-const OFFLINE_URL = '/wp_pwa/trunk/';
+const OFFLINE_URL = '/';
 
 function createCacheBustedRequest(url) {
   let request = new Request(url, {cache: 'reload'});
